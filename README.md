@@ -1,2 +1,3 @@
 # StyleEncoreApp
-app finall
+app final
+
