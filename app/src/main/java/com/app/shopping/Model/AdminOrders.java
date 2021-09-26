@@ -15,6 +15,13 @@ public class AdminOrders {
         this.date = date;
         this.time = time;
         this.totalAmount = totalAmount;
+        
+        
+            /* this.pid = pid;
+        this.pname = pname;
+        this.price = price;
+        this.quantity = quantity;
+        this.discount = discount;*/
     }
 
     public String getName() {
