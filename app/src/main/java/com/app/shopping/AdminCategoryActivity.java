@@ -31,7 +31,11 @@ public class AdminCategoryActivity extends AppCompatActivity {
             }
         });
         CheckOrdersBtn = (Button) findViewById(R.id.check_orders_btn);
-
+    /* this.pid = pid;
+        this.pname = pname;
+        this.price = price;
+        this.quantity = quantity;
+        this.discount = discount;*/
 
         CheckOrdersBtn.setOnClickListener(new View.OnClickListener() {
             @Override
