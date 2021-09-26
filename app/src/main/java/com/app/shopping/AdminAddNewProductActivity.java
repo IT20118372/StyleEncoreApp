@@ -32,7 +32,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 public class AdminAddNewProductActivity extends AppCompatActivity {
     private String CategoryName, Description, Price, Pname, saveCurrentDate, saveCurrentTime;
-    private Button AddNewProductButton;
+    private Button AddNewProductButton, addDiscountBtn;
     private ImageView InputProductImage;
     private EditText InputProductName, InputProductDescription, InputProductPrice;
     private static final int GalleryPick = 1;
@@ -53,6 +53,8 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
         CategoryName = getIntent().getExtras().get("category").toString();
         ProductImagesRef = FirebaseStorage.getInstance().getReference().child("Product Images");
         ProductsRef = FirebaseDatabase.getInstance().getReference().child("Products");
+        addDiscountBtn = (Button) findViewById(R.id.addDiscountBtn) ;
+
 
 
         AddNewProductButton = (Button) findViewById(R.id.add_new_product);
@@ -79,6 +81,15 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
                 ValidateProductData();
             }
         });
+        
+        addDiscountBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), AddDiscountActivity.class));
+                finish();
+            }
+        });
+
     }
 
 
