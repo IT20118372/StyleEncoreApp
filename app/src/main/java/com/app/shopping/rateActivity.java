@@ -107,7 +107,26 @@ public class rateActivity extends AppCompatActivity {
 
 
 
+                }/*
+                
+                
+                To display Toast Msg :  enable this
+                
+                
+                else {
+                    Toast.makeText(rateActivity.this, "Dear " + nameR + " you have added some feedback....", Toast.LENGTH_SHORT).show();
+                    loadingBarR.dismiss();
+                    Toast.makeText(rateActivity.this, "Please try again using another account.", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(rateActivity.this, com.app.shopping.HomeActivity.class);
+                    startActivity(intent);
                 }
+            }
+                
+                
+                
+                
+                
+                */
                 else {
                     Toast.makeText(rateActivity.this, "Dear " + nameR + " you have added some feedback....", Toast.LENGTH_SHORT).show();
                     loadingBarR.dismiss();
