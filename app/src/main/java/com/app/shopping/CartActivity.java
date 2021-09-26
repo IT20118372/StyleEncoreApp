@@ -133,6 +133,12 @@ public class CartActivity extends AppCompatActivity{
         recyclerView.setAdapter(adapter);
         adapter.startListening();
     }
+    
+    
+    
+    
+    //try to enable this. if err, change back to 1st state
+    
     private void CheckOrderState()
     {
         DatabaseReference ordersRef;
