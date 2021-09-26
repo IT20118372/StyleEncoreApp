@@ -14,7 +14,11 @@ public class Cart {
         this.price = price;
         this.quantity = quantity;
         this.discount = discount;
-        
+        /* this.pid = pid;
+        this.pname = pname;
+        this.price = price;
+        this.quantity = quantity;
+        this.discount = discount;*/
      
         
     }
