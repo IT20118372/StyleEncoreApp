@@ -1,3 +1,3 @@
 # StyleEncoreApp
-app final
+app final. status:closed project
 
